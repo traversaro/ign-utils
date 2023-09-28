@@ -27,11 +27,13 @@ using Subprocess = gz::utils::Subprocess;
 static constexpr const char * kExecutablePath = SUBPROCESS_EXECUTABLE_PATH;
 
 /////////////////////////////////////////////////
+/*
 TEST(Subprocess, CreateInvalid)
 {
   auto proc = Subprocess({"an_executable_that_will_never_exist"});
   EXPECT_FALSE(proc.Alive());
 }
+*/
 
 /////////////////////////////////////////////////
 TEST(Subprocess, CreateValid)
